@@ -16,6 +16,7 @@ header{
 	width: 100%;
 	z-index: 1;
 	padding: 2em 0;
+	background-color: #EFEDE4;
 }
 
 .container-header{
@@ -27,8 +28,15 @@ header{
 }
 @media (min-width: 1140px){
 .container-header {
-    max-width: 1616px;
+    max-width: 1200px;
 }
+}
+
+.header-left-logo{
+	float: left;
+	display: block;
+	width: 3em;
+	height: 3em;
 }
 
 nav{
