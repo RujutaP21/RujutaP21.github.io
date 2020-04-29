@@ -25,6 +25,7 @@ header{
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
+	overflow: hidden;
 }
 @media (min-width: 1140px){
 .container-header {
@@ -123,7 +124,23 @@ footer{
 	position: relative;
 	width: 100%;
 	bottom: 0;
+	padding: 2em 0;
 	background-color: rgb(235, 232, 223);
 }
+
+.container-footer{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	overflow: hidden;
+}
+@media (min-width: 1140px){
+.container-header {
+    max-width: 1200px;
+}
+}
+
 /* ----- Footer End -----*/
 
