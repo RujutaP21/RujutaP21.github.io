@@ -15,7 +15,7 @@ header{
 	display: inline-block;
 	width: 100%;
 	z-index: 1;
-	padding: 2em 0;
+	padding: 1em 0;
 	background-color: #EFEDE4;
 }
 
@@ -60,7 +60,7 @@ nav a:hover{
 nav a.active{
   color: #E98074
 }
-/* ----- Navigation Bar Start -----*/
+/* ----- Navigation Bar End -----*/
 
 /* ----- Main Content Elements Start-----*/
 .pagecentercontent{
@@ -70,16 +70,60 @@ nav a.active{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+	height: 100vh;
+	background-color: rgb(235, 232, 223);
 	/*min-height: 600px; */
 }
 
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+@media (min-width: 1200px){
+	.container-header {
+			max-width: 970px;
+	}
+}
+
+.brandlogo{
+	margin: 0 auto;
+	max-width: 300px;
+}
+
 .homelogo{
-  margin-left: auto;
-  margin-top: auto;
+	vertical-align: middle;
+  /*margin-left: auto;
 	margin-right: auto;
 	padding-left: 1em;
-	padding-right: 1em;
+	padding-right: 1em; */
+}
+
+.home-image{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	padding: 0.5em;
+	background-color: rgb(221, 221, 221);
+}
+
+.border{
+	display: block;
+	border-radius: 50%;
+	padding: 1.5em;
+	border: 1px dashed #E98074;
 }
 
 /* ----- Main Content Elements End-----*/
+
+/* ----- Footer Start -----*/
+footer{
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	background-color: rgb(235, 232, 223);
+}
+/* ----- Footer End -----*/
+
