@@ -177,7 +177,6 @@ footer{
  }
 
 .work-full-column{
-  /*background-color: azure;*/
   grid-column: span 2;
   min-height: 500px;
 }
@@ -199,3 +198,53 @@ height: 450px;
   float: right;
 }
 /* ----- Work End -----*/
+
+/* ----- About Start -----*/
+.container-about-main{
+  position: relative;
+  /*display: flex;
+  flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+	height: 100vh;	 
+}
+
+.about-mainpic{
+  margin-top: 10%;
+}
+
+.about-tagline{
+  position: absolute;
+  padding: 3em;
+  border-radius: 50%;
+  border: 1px dotted #E98074;
+}
+
+.about-tagline:hover{
+  font-size: medium;
+  background-color: #E98074;
+  color: white;
+}
+
+.topright{
+  top: 15%;
+  right: 25%;
+}
+
+.bottomright{
+  bottom: 20%;
+  right: 20%;
+}
+
+.topleft{
+  top: 15%;
+  left: 20%;
+}
+
+.bottomleft{
+  bottom: 20%;
+  left: 20%;
+}
+
+/* ----- About End -----*/
