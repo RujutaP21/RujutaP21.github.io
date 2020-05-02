@@ -96,26 +96,50 @@ nav a.active{
 
 .homelogo{
 	vertical-align: middle;
-  /*margin-left: auto;
-	margin-right: auto;
-	padding-left: 1em;
-	padding-right: 1em; */
+}
+
+.home{
+	margin-bottom: 1em;
+}
+
+.container-home{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 2em auto;
+}
+
+.reverse{
+	flex-direction: row-reverse;
+}
+
+.home-block-item{
+	margin: 1em;
+}
+
+.border{
+	display: inline-block;
+	border-radius: 50%;
+	padding: 0.5em;
+	border: 1px dashed #E98074;
+	align-self: center;
 }
 
 .home-image{
+	margin: 0;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	padding: 0.5em;
-	background-color: rgb(221, 221, 221);
+	background-color: rgb(240, 224, 224);
 }
 
-.border{
-	display: block;
-	border-radius: 50%;
-	padding: 1.5em;
-	border: 1px dashed #E98074;
+.container-home p{
+	width: 30%;
+	text-align: initial;
 }
+
 
 /* ----- Main Content Elements End-----*/
 
@@ -124,22 +148,65 @@ footer{
 	position: relative;
 	width: 100%;
 	bottom: 0;
-	padding: 2em 0;
+	padding: 1em 0;
 	background-color: rgb(235, 232, 223);
 }
 
 .container-footer{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 100%;
-	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 0.5fr;
+	text-align: left;
 }
-@media (min-width: 1200px){
-.container-header {
-    max-width: 1140px;
+
+.footer-left h4{
+	margin: 0.5em auto;
 }
+
+.footer-left p{
+	margin: 2em auto;
+	font-size: small;
+}
+
+.footer-logo{
+	display: block;
+	width: 3.5em;
+	height: 3.5em;
+}
+
+.footer-center{
+	padding-right: 7em;
+	text-align: center;
+}
+
+.footer-icons a{
+	margin: 0.5em;
+	text-decoration: none;
+	padding: 0.5em;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px dotted #E98074;
+}
+
+.icon{
+	width: 2em;
+	height: 1.5em;
+}
+
+.footer-right{
+	padding-left: 2em;
+}
+
+.footer-right ul{
+	list-style: none;
+}
+
+.footer-right ul li{
+	margin-top: 0.5em;
+}
+
+.footer-right ul a{
+	text-decoration: none;
+	color: #E98074;
 }
 
 /* ----- Footer End -----*/
