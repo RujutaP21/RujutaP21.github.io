@@ -7,6 +7,31 @@ body{
 	margin: 0;
 }
 
+/* ----- Font Start -----*/
+
+@font-face{
+	src: url(../fonts/Karla-Bold.ttf);
+	font-family: 'karla';
+}
+@font-face{
+	src: url(../fonts/Montserrat-Regular.ttf);
+	font-family: 'monts-regular';
+}
+@font-face{
+	src: url(../fonts/Montserrat-Bold.ttf);
+	font-family: 'monts-bold';
+}
+
+h1, h2, h3, h4{
+	font-family: karla ;
+}
+
+p, a, li{
+	font-family: 'monts-regular';
+}
+
+/* ----- Font End -----*/
+
 /* ----- Navigation Bar Start -----*/
 header{
 	position: fixed;
@@ -15,7 +40,7 @@ header{
 	display: inline-block;
 	width: 100%;
 	z-index: 1;
-	padding: 1em 0;
+	padding: 0.5em 0;
 	background-color: #EFEDE4;
 }
 
@@ -36,21 +61,22 @@ header{
 .header-left-logo{
 	float: left;
 	display: block;
-	width: 3em;
-	height: 3em;
+	width: 2.5em;
+	height: 2.5em;
 }
 
 nav{
 	float: right;
 	display: block;
+	padding: 0.6em;
 }
 
 nav a{
 	display: relative;
   float: none;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 1em;
+	text-decoration: none;
 }
 
 nav a:hover{
@@ -127,6 +153,7 @@ nav a.active{
 }
 
 .home-image{
+	display: block;
 	margin: 0;
 	width: 100px;
 	height: 100px;
@@ -315,3 +342,11 @@ height: 450px;
 }
 
 /* ----- About End -----*/
+
+/* ----- Magis Start -----*/
+
+.magis{
+	background-color: #F4F3F4;
+}
+
+/* ----- Magis End -----*/
