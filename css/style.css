@@ -3,7 +3,7 @@
 }
 
 body{
-	background-color: #EFEDE4;
+	background-color: #FCFAF1;
 	margin: 0;
 }
 
@@ -11,19 +11,23 @@ body{
 
 @font-face{
 	src: url(../fonts/Karla-Bold.ttf);
-	font-family: 'karla';
+	font-family: 'karla-bold';
+}
+@font-face{
+	src: url(../fonts/Karla-BoldItalic.ttf);
+	font-family: 'karla-italic';
 }
 @font-face{
 	src: url(../fonts/Montserrat-Regular.ttf);
 	font-family: 'monts-regular';
 }
 @font-face{
-	src: url(../fonts/Montserrat-Bold.ttf);
+	src: url(../fonts/Montserrat-SemiBold.ttf);
 	font-family: 'monts-bold';
 }
 
 h1, h2, h3, h4{
-	font-family: karla ;
+	font-family: 'karla-bold' ;
 }
 
 p, a, li{
@@ -41,20 +45,20 @@ header{
 	width: 100%;
 	z-index: 1;
 	padding: 0.5em 0;
-	background-color: #EFEDE4;
+	background-color: #FCFAF1;
 }
 
 .container-header{
+	padding-right: 15px;
+	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 	width: 100%;
 	overflow: hidden;
 }
 @media (min-width: 1200px){
 .container-header {
-    max-width: 1140px;
+    max-width: 1150px;
 }
 }
 
@@ -72,21 +76,25 @@ nav{
 }
 
 nav a{
-	display: relative;
   float: none;
   text-align: center;
-  padding: 1em;
+	padding: 0.5em;
+	padding-bottom: 0.1em;
 	text-decoration: none;
+	color: #DB565D;
+	font-family: 'monts-regular';
 }
 
 nav a:hover{
-  color: #E98074;
-  border-bottom: 1px solid #E98074;
+  color: #6B3231;
+  border-bottom: 1px solid #6B3231;
 }
 
 nav a.active{
-  color: #E98074
+	color: #6B3231;
+	font-family: 'monts-bold';
 }
+
 /* ----- Navigation Bar End -----*/
 
 /* ----- Main Content Elements Start-----*/
@@ -98,7 +106,7 @@ nav a.active{
   align-items: center;
   width: 100%;
 	height: 100vh;
-	background-color: rgb(235, 232, 223);
+	background-color:#FCFAF1;
 	/*min-height: 600px; */
 }
 
@@ -108,11 +116,6 @@ nav a.active{
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-}
-@media (min-width: 1200px){
-	.container-header {
-			max-width: 970px;
-	}
 }
 
 .brandlogo{
@@ -124,8 +127,15 @@ nav a.active{
 	vertical-align: middle;
 }
 
+.pagecentercontent h1{
+	padding: 0.5em;
+	font-family: 'karla-bold';
+	color: #6B3231;
+}
+
 .home{
 	margin-bottom: 1em;
+	background-color: #FACCAD;
 }
 
 .container-home{
@@ -133,7 +143,8 @@ nav a.active{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 2em auto;
+	margin: auto;
+	padding: 2em 0;
 }
 
 .reverse{
@@ -148,7 +159,7 @@ nav a.active{
 	display: inline-block;
 	border-radius: 50%;
 	padding: 0.5em;
-	border: 1px dashed #E98074;
+	border: 1px dashed #DB565D;
 	align-self: center;
 }
 
@@ -159,12 +170,13 @@ nav a.active{
 	height: 100px;
 	border-radius: 50%;
 	padding: 0.5em;
-	background-color: rgb(240, 224, 224);
+	background-color: #FCFAF1;
 }
 
 .container-home p{
-	width: 30%;
+	width: 35%;
 	text-align: initial;
+	color: #6B3231;
 }
 
 
@@ -176,7 +188,7 @@ footer{
 	width: 100%;
 	bottom: 0;
 	padding: 1em 0;
-	background-color: rgb(235, 232, 223);
+	background-color: #FCFAF1;
 }
 
 .container-footer{
@@ -187,11 +199,15 @@ footer{
 
 .footer-left h4{
 	margin: 0.5em auto;
+	font-family: 'karla-bold';
+	color: #6B3231;	
 }
 
 .footer-left p{
 	margin: 2em auto;
-	font-size: small;
+	font-size: x-small;
+	font-family: 'monts-regular';
+	color: #DB565D;	
 }
 
 .footer-logo{
@@ -203,6 +219,8 @@ footer{
 .footer-center{
 	padding-right: 7em;
 	text-align: center;
+	font-family: 'karla-bold';
+	color: #6B3231;	
 }
 
 .footer-icons a{
@@ -211,12 +229,12 @@ footer{
 	padding: 0.5em;
 	display: inline-block;
 	border-radius: 50%;
-	border: 1px dotted #E98074;
+	border: 1px dotted #DB565D;
 }
 
 .icon{
-	width: 2em;
-	height: 1.5em;
+	width: 1em;
+	height: 0.5em;
 }
 
 .footer-right{
@@ -233,7 +251,7 @@ footer{
 
 .footer-right ul a{
 	text-decoration: none;
-	color: #E98074;
+	color: #DB565D;
 }
 
 /* ----- Footer End -----*/
@@ -246,7 +264,8 @@ footer{
   justify-content: center;
   align-items: center;
   width: 100%;
-	height: 100vh;	
+	height: 100vh;
+	background-color: #FACCAD;	
 }
 
 .work-logo{
@@ -260,14 +279,17 @@ footer{
 .container-list{
   margin: auto;
   padding-left: 15em;
-  padding-bottom: 10em;
+	padding-bottom: 10em;
+	color: white;
 }
 
 .work-grid{
   display: grid;
-  grid-gap: 2em 1em;
+  grid-gap: 2em 2em;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 2em;
+	padding-bottom: 2em;
  }
 
 .work-full-column{
@@ -278,10 +300,18 @@ footer{
 /*.work-half-column{
   background-color: beige;
 }*/
+.work-link{
+	display: block;
+}
+
+.work-title p{
+	color: #6B3231;
+	margin-top: 0.5em;
+}
 
 .work-image{
-width: 100%;
-height: 450px;
+	width: 100%;
+	height: 450px;
 }
 
 .work-left{
@@ -373,14 +403,35 @@ height: 450px;
 	object-fit: cover;
 }
 
+.big-title h1{
+	margin: 0;
+	color: white;
+	font-size: 10em;
+}
+
 .project-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	text-align: start;
 }
 
+.project-desciption{
+	margin-left: 30%;
+}
+
+.project-desciption h2{
+	font-size: 3em;
+	color: #6B3231;
+	margin-bottom: 0;
+}
+
 .project-content-right{
 	grid-column-start: 2;
+	margin-right: 15%;
+}
+
+.project-section{
+	color: #DB565D;
 }
 
 .project-member-flex{
