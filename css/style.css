@@ -217,6 +217,7 @@ nav a.active{
 /* ----- Footer Start -----*/
 footer{
 	position: relative;
+	margin-top: 2em;
 	width: 100%;
 	bottom: 0;
 	padding: 1em 0;
@@ -267,6 +268,7 @@ footer{
 .icon{
 	width: 1em;
 	height: 0.5em;
+	fill: #6B3231;
 }
 
 .footer-right{
@@ -364,8 +366,8 @@ footer{
 /* ----- About Start -----*/
 .container-about-main{
   position: relative;
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -374,7 +376,9 @@ footer{
 }
 
 .about-mainpic{
-  margin-top: 10%;
+	display: block;
+	height: 60vh;
+  /* margin-top: 10%; */
 }
 
 .about-tagline{
