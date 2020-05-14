@@ -111,8 +111,9 @@ nav a.active{
 }
 
 .container{
-	padding-right: 10em; /*15px*/
-	padding-left: 10em;  /*15px*/
+	padding-right: 10em; 
+	padding-left: 10em; 
+	padding-top:5em;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
@@ -476,10 +477,32 @@ footer{
 	background-color: #DB565D;
 }
 
+.content-box{
+	position: relative;
+	width:1000px;
+	height: 700px;
+	padding: 0;
+}
+
 .about-mainpic{
 	display: block;
-	height: 60vh;
-  /* margin-top: 10%; */
+}
+
+.hidden-image {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* background-color: pink; */
+}
+
+.topright{
+	display: inline-block;
+	position: absolute;
+  top: 15%;
+  right: 25%;
 }
 
 .about-tagline{
@@ -492,16 +515,12 @@ footer{
 	stroke-dasharray: '2%2c 8';
 }
 
-.about-tagline:hover{
+.about-tagline:hover {
   font-size: medium;
-  background-color: #FACCAD;
+  background-color: #FACCAD; 
   color: #6B3231;
 }
 
-.topright{
-  top: 15%;
-  right: 25%;
-}
 
 .bottomright{
   bottom: 20%;
