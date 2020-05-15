@@ -18,7 +18,7 @@ body{
 	font-family: 'karla-italic';
 }
 @font-face{
-	src: url(../fonts/Montserrat-Regular.ttf);
+	src: url(../fonts/Montserrat-Medium.ttf);
 	font-family: 'monts-regular';
 }
 @font-face{
@@ -28,10 +28,12 @@ body{
 
 h1, h2, h3, h4{
 	font-family: 'karla-bold' ;
+	font-size: 1.5em;
 }
 
 p, a, li{
 	font-family: 'monts-regular';
+	line-height: 1.7;
 }
 
 /* ----- Font End -----*/
@@ -235,6 +237,7 @@ footer{
 }
 
 .container-footer{
+	padding-top: 0;
 	display: grid;
 	grid-template-columns: 1fr 2.5fr 0.5fr;
 	text-align: left;
@@ -410,6 +413,15 @@ footer{
   cursor: default;
 }
 
+.hovereffect .overlay{
+	width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
 .hovereffect img{
 	display: block;
 	width: 100%;
@@ -417,33 +429,34 @@ footer{
 	transition: all 0.35s;
 }
 
-.hovereffect h3{
-  text-transform: uppercase;
-  position: absolute;
-  display: inline-block;
-  color: #FCFAF1;
-  margin: auto;
-	right: 35%;
-	bottom: 50%;
-	font-size: 3em;
-	opacity: 0;
-	z-index: 1;
-}
-
 .work-image:hover{
 	box-shadow: 0 14px 28px rgba(32, 32, 32, 0.2), 0 10px 10px rgba(36, 36, 36, 0.12);
 }
 
-.hovereffect img:hover{
+.hovereffect:hover img{
 	transform: scale(1);
 	filter: brightness(0.5);
 }
 
-.hovereffect h3:hover{
+.hovereffect h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3em;
 	color: #FCFAF1;
-	opacity: 1;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	width: 100%;
+	height:100%;
+	padding-top: 4em;
+	opacity: 0;
+	transition: all 0.35s;
 }
 
+.hovereffect:hover h3 {
+  opacity: 1;
+  filter: alpha(opacity=0);
+}
 
 .work-left{
   float: left;
@@ -581,13 +594,18 @@ footer{
 	object-fit: cover;
 }
 
+.big-title{
+	margin-top: -4em;
+}
+
 .big-title h1{
 	margin: 0;
 	color: white;
-	font-size: 10em;
+	font-size: 6em;
 }
 
 .project-grid{
+	padding-top: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	text-align: start;
@@ -598,7 +616,7 @@ footer{
 }
 
 .project-desciption h2{
-	font-size: 3em;
+	font-size: 2em;
 	color: #6B3231;
 	margin-bottom: 0;
 }
@@ -608,21 +626,43 @@ footer{
 	margin-right: 15%;
 }
 
+.project-heading{
+	padding-top: 2em;
+}
+
+.project-content-right ul{
+	padding-inline-start: 0;
+	list-style-position: inside;
+	list-style-type: initial;
+}
+
 .project-section{
 	color: #DB565D;
+	padding-top: 6em;
 }
 
 .project-member-flex{
-	display: inline-flex;
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;
 	justify-content: start;
-	align-items: center;
+	align-items: start;
 	width: 100%;
 }
 
 .project-member-flexitem{
-	width: 33%;
-	align-items: center;
+	align-items: flex-start;
+}
+.project-member-flexitem .border{
+	margin: 0.6em 0;
+	border-color: #6B3231;
+}
+
+.member-circle{
+	width: 1em;
+	height: 1em;
+	float: left;
+	border-radius: 50%;
+	background-color: #DB565D;
 }
 
 .project-member-flexitem img{
@@ -635,8 +675,7 @@ footer{
 
 .project-member-flexitem p{
 	float: right;
-	width: 70%;
-	margin: 0;
+	margin: 1em;
 }
 
 .project-user-profile{
@@ -661,6 +700,7 @@ footer{
 
 .project-outbox{
 	margin: auto;
+	padding-top: 1em;
 }
 
 .project-outline{
@@ -691,6 +731,14 @@ footer{
 	left:0;
 }
 
+.mockup-image{
+	height: auto;
+}
+
+.mockup-image img{
+	height: auto;
+}
+
 /* ----- Magis End -----*/
 
 /* ----- BeautyMask Start -----*/
@@ -700,5 +748,9 @@ footer{
 
 ol{
 	padding:1em;
+}
+
+ol li p{
+	font-family: 'monts-bold';
 }
 /* ----- Beautymask End -----*/
