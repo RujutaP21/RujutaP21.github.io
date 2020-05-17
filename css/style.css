@@ -41,8 +41,6 @@ p, a, li{
 /* ----- Navigation Bar Start -----*/
 header{
 	position: fixed;
-	/* left: 0;
-	top: 0; */
 	display: inline-block;
 	width: 100%;
 	z-index: 1;
@@ -109,7 +107,6 @@ nav a.active{
   width: 100%;
 	height: 100vh;
 	background-color:#FCFAF1;
-	/*min-height: 600px; */
 }
 
 .container{
@@ -384,9 +381,6 @@ footer{
   min-height: 500px;
 }
 
-/*.work-half-column{
-  background-color: beige;
-}*/
 .work-link{
 	display: block;
 }
@@ -494,20 +488,11 @@ footer{
 	display: block;
 }
 
-/* .hidden-image {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-} */
-
 .topright{
 	display: inline-block;
 	position: absolute;
-  top: 5%;
-  right: 8%;
+  top: 15%;
+  right: 15%;
 }
 
 .about-tagline{
@@ -551,7 +536,6 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
   width: 100%;
 	height: 100vh;	 
 	background-color: #FACCAD;
@@ -561,12 +545,25 @@ footer{
 	position: relative;
 	width: 500px;
 	height: 500px;
-	margin: 0 2em;
-	float: left;
-	
+	margin: 0;
+	float: left;	
 }
 
 .about-inspiration img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.about-personality{
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	margin: 0;
+	float: left;
+}
+
+.about-personality img{
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -581,9 +578,10 @@ footer{
 }
 
 .about-grid{
+	margin: 0;
 	padding-top: 0;
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 50vh 50vh;
 }
 
 /* ----- About End -----*/
