@@ -551,8 +551,6 @@ footer{
 
 .about-inspiration img{
 	display: block;
-	width: 100%;
-	height: 100%;
 }
 
 .about-personality{
@@ -685,7 +683,6 @@ footer{
 	display: block;
 	width: 100%;
 	height: 100vh;
-	object-fit: cover;
 }
 
 .big-title{
