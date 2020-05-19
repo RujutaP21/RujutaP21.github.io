@@ -556,22 +556,17 @@ footer{
 .about-personality{
 	position: relative;
 	width: 30vw;
-	height: 50vh;
 	margin: 0;
 	float: left;
 }
 
 .about-personality img{
 	display: block;
-	width: 100%;
-	height: 100%;
 }
 
 .about-content{
 	text-align: left;
-	float: right;
-	margin: 4em 0;
-	width: 50%;
+	margin: 4em 1em;
 	color: #DB565D;
 }
 
@@ -579,7 +574,7 @@ footer{
 	margin: 0;
 	padding-top: 0;
 	display: grid;
-	grid-template-rows: 50vh 50vh;
+	grid-template-columns: 1fr 1fr;
 }
 
 .skillpage{
@@ -689,7 +684,7 @@ footer{
 .project-image img{
 	display: block;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
 
 .big-title{
