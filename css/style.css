@@ -449,7 +449,8 @@ footer{
 
 .hovereffect:hover h3 {
   opacity: 1;
-  filter: alpha(opacity=0);
+	filter: alpha(opacity=0);
+	cursor: pointer;
 }
 
 .work-left{
@@ -464,6 +465,24 @@ footer{
 /* ----- About Start -----*/
 .about{
 	background-color: #FACCAD;
+}
+
+.about header{
+	background-color: rgba(250, 204, 173, 0.418);
+}
+
+.back{
+	position: fixed;
+	margin: 1em;
+	left: 0;
+	top: 0;
+}
+
+.back a{
+	text-decoration: none;
+	color: #6B3231;
+	font-family: "karla-bold";
+	font-size: 1.2em;
 }
 
 .container-about-main{
@@ -482,17 +501,15 @@ footer{
 	width:1000px;
 	height: 700px;
 	padding: 0;
+	margin-top: 7%;
 }
 
 .about-mainpic{
 	display: block;
 }
 
-.topright{
-	display: inline-block;
-	position: absolute;
-  top: 15%;
-  right: 15%;
+.tag a{
+	text-decoration: none;
 }
 
 .about-tagline{
@@ -508,26 +525,32 @@ footer{
   color: #6B3231;
 }
 
+.topright{
+	display: inline-block;
+	position: absolute;
+  top: 15%;
+  right: 15%;
+}
 
 .bottomright{
 	display: inline-block;
 	position: absolute;
-  bottom: 20%;
-  right: 20%;
+  bottom: 10%;
+  right: 10%;
 }
 
 .topleft{
 	display: inline-block;
 	position: absolute;
   top: 15%;
-  left: 20%;
+  left: 10%;
 }
 
 .bottomleft{
 	display: inline-block;
 	position: absolute;
-  bottom: 20%;
-  left: 20%;
+  bottom: 15%;
+  left: 10%;
 }
 
 
