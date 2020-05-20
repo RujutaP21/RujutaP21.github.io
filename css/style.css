@@ -362,7 +362,7 @@ footer{
 .container-list{
 	margin-left: 50%;
 	color: #6B3231;
-	width: 50%;
+	width: 70%;
 	text-align: left;
 	font-size: 150%;
 }
@@ -605,6 +605,30 @@ footer{
 	grid-template-columns: 1fr 1fr;
 	padding: 5em;
 	align-items: center;
+}
+
+.downloadresume{
+	position: fixed;
+	margin: 1em;
+	margin-right: 2em;
+	right: 0;
+	top: 0;
+}
+
+.downloadresume a{
+	text-decoration: none;
+	color: #6B3231;
+	font-family: "karla-bold";
+	font-size: 1.2em;
+}
+
+.resume{
+	margin: 0;
+}
+
+.resume img{
+	display: block;
+	width: 100%;
 }
 
 /* ----- About End -----*/
@@ -856,10 +880,9 @@ footer{
 }
 
 /* ----- Magis End -----*/
-
 /* ----- BeautyMask Start -----*/
 .beautymask{
-	background-color: rgb(245, 239, 255);
+	background-color: rgb(241, 232, 255);
 }
 
 ol{
@@ -870,3 +893,31 @@ ol li p{
 	font-family: 'monts-bold';
 }
 /* ----- Beautymask End -----*/
+/* ----- Fork Start -----*/
+.fork{
+	background-color: rgb(223, 255, 213);
+}
+
+.project-mockup-flex{
+	display: grid;
+  grid-template-columns:1fr 1fr ;
+	justify-content: left;
+	height: 60vh;
+	margin-bottom: 10em;
+}
+
+.project-mockup-flex img{
+	display: block;
+	height: auto;
+	margin: 0;
+}
+
+.mockup-flexitem1{
+	width: 60%;
+}
+
+.project-mockup-flex p{
+	padding: 5em;
+	text-align: left;
+}
+/* ----- Fork End -----*/
