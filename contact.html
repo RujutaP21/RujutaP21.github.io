@@ -50,19 +50,19 @@
           </article>
 
           <article class="contact-form">
-            <p>Name</p>
-            <div class="inputbox"></div>
-            <p>Email</p>
-            <div class="inputbox"></div>
-            <p>Message</p>
-            <div class="inputbox message"></div>
-            <button>Send</button>
+            <form method="post" name="contactform" action="contact.php">
+              <p>Name</p>
+              <input type="text" name="name" class="inputbox">
+              <p>Email</p>
+              <input type="text" name="email" class="inputbox">
+              <p>Message</p>
+              <textarea name="message" class="inputbox message"></textarea>
+              <input type="submit" value="Send" class="button">
+            </form>
           </article>
           
         </div>
-      </section>
-
-    
+      </section>  
     </div>
   </main>
 </body>
