@@ -28,9 +28,19 @@ body{
 
 h1, h2, h3, h4{
 	font-family: 'karla-bold' ;
+}
+h1{
+	font-size: 2.2em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
 	font-size: 1.5em;
 }
-
+h4{
+	font-size: 1.17em;
+}
 p, a, li{
 	font-family: 'monts-regular';
 	line-height: 1.7;
@@ -215,9 +225,7 @@ nav a.active{
 .container-home p{
 	width: 35%;
 	text-align: initial;
-	color: #6B3231;
 }
-
 
 /* ----- Main Content Elements End-----*/
 
@@ -749,14 +757,18 @@ footer{
 	height: 100%;
 }
 
+.mask-image{
+	margin-top: 2em;
+}
+
 .big-title{
 	margin-top: -4em;
 }
 
 .big-title h1{
 	margin: 0;
-	color: white;
-	font-size: 6em;
+	color: #DB565D;
+	font-size: 5em;
 }
 
 .project-grid{
@@ -782,7 +794,7 @@ footer{
 }
 
 .project-heading{
-	padding-top: 2em;
+	margin-bottom: 0.5em;
 }
 
 .project-content-right ul{
@@ -813,8 +825,8 @@ footer{
 }
 
 .member-circle{
-	width: 1em;
-	height: 1em;
+	width: 0.5em;
+	height: 0.5em;
 	float: left;
 	border-radius: 50%;
 	background-color: #DB565D;
@@ -830,7 +842,7 @@ footer{
 
 .project-member-flexitem p{
 	float: right;
-	margin: 1em;
+	margin: 0.5em;
 }
 
 .project-user-profile{
