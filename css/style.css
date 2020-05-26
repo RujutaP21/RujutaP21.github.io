@@ -466,6 +466,26 @@ footer{
 .work-right{
   float: right;
 }
+
+.more-project{
+	padding-top: 0;
+	padding-bottom: 1em;
+}
+
+.more-project a{
+	text-decoration: none;
+	color: #DB565D;
+	font-family: "karla-bold";
+	font-size: 1.2em;
+	transition: 200ms ease-in;
+}
+
+.more-project a:hover{
+	border-bottom: 1px solid #6B3231;
+	font-size: 1.5em;
+	transition: 100ms ease-out;
+}
+
 /* ----- Work End -----*/
 
 /* ----- About Start -----*/
@@ -904,6 +924,26 @@ footer{
 
 .mockup-image img{
 	height: auto;
+}
+
+.project-switch{
+	margin:0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.project-switch a{
+	text-decoration: none;
+	color: #6B3231;
+	font-family: "karla-bold";
+	font-size: 1.2em;
+}
+.previous{
+	float: left;
+}
+
+.next{
+	float: right;
 }
 
 /* ----- Magis End -----*/
