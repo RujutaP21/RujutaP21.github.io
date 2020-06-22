@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 body{
 	background-color: #FCFAF1;
@@ -197,15 +200,18 @@ nav a.active{
 }
 
 .home-block-item{
-	margin: 1em;
+	margin: 2em;
 }
 
 .border{
-	display: inline-block;
+	display: block;
+	position: relative;
 	border-radius: 50%;
 	padding: 0.5em;
 	border: 1px dashed #DB565D;
 	align-self: center;
+	width: 120px;
+	height: 120px;
 	/* animation: spinAround 9s linear infinite; */
 }
 /* @keyframes spinAround {
@@ -220,13 +226,13 @@ nav a.active{
 .home-image{
 	display: block;
 	margin: 0;
-	width: 100px;
-	height: 100px;
-	padding: 1em;
+	width: 120px;
+	height: 120px;
+	padding: 0.2em;
 }
 
 .container-home p{
-	width: 35%;
+	width: 45%;
 	text-align: initial;
 }
 
@@ -362,10 +368,18 @@ footer{
 .work-logo{
 	display: block;
   margin: 0 auto;
-  width: 300px;
-  position: absolute;
-  left: -150px;
-  top: 18%;
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	object-fit: fill;
+  left: 10em;
+  top: 20%;
+}
+
+.work-logo img{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .container-list{
@@ -521,7 +535,7 @@ footer{
   justify-content: center;
   width: 100%;
 	height: 100vh;	 
-	background-color: #DB565D;
+	background-color: #FCFAF1;
 }
 
 .content-box{
@@ -544,8 +558,8 @@ footer{
 	padding: 3em;
 	font-size: 1em;
 	border-radius: 50%;
-	border: 1px dashed #FACCAD;
-	color: #FACCAD;
+	border: 1px dashed #DB565D;
+	color: #6B3231;
 }
 
 .about-tagline:hover {
@@ -594,14 +608,17 @@ footer{
 
 .about-inspiration{
 	position: relative;
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	margin: 0;
-	float: left;	
+	float: left;
+	left: -1em;	
 }
 
 .about-inspiration img{
 	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .about-personality{
@@ -613,12 +630,18 @@ footer{
 
 .about-personality img{
 	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .about-content{
 	text-align: left;
 	margin: 4em 1em;
 	color: #DB565D;
+}
+
+.about-content h2{
+	color: #6B3231;
 }
 
 .about-grid{
