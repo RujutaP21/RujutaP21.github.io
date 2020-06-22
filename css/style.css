@@ -795,6 +795,7 @@ footer{
 	margin: 0;
 	width: 100%;
 	height: 100vh;
+	object-fit: cover;
 }
 
 .project-image img{
@@ -865,15 +866,23 @@ footer{
 .project-member-flexitem{
 	align-items: flex-start;
 }
-.project-member-flexitem .border{
-	margin: 0.6em 0;
-	border-color: #6B3231;
+
+.user-border{
+	display: block;
+	position: relative;
+	border-radius: 50%;
+	padding: 0.5em;
+	border: 1px dashed #6B3231;
+	width: 0.3em;
+	height: 0.3em;
 }
 
 .member-circle{
 	width: 0.5em;
 	height: 0.5em;
-	float: left;
+	position: absolute;
+	top: 25%;
+	left: 25%;
 	border-radius: 50%;
 	background-color: #DB565D;
 }
@@ -887,8 +896,9 @@ footer{
 }
 
 .project-member-flexitem p{
-	float: right;
-	margin: 0.5em;
+	margin: 0.5em 1.5em;
+	position: relative;
+	top: -2em;
 }
 
 .project-user-profile{
