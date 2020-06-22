@@ -201,6 +201,7 @@ nav a.active{
 
 .home-block-item{
 	margin: 2em;
+	position: relative;
 }
 
 .border{
@@ -212,20 +213,22 @@ nav a.active{
 	align-self: center;
 	width: 120px;
 	height: 120px;
-	/* animation: spinAround 9s linear infinite; */
+	animation: spinAround 9s linear infinite;
 }
-/* @keyframes spinAround {
+@keyframes spinAround {
 	from {
 			transform: rotate(0deg)
 	}
 	to {
 			transform: rotate(360deg);
 	}
-} */
+}
 
 .home-image{
 	display: block;
+	position: absolute;
 	margin: 0;
+	top: 0;
 	width: 120px;
 	height: 120px;
 	padding: 0.2em;
