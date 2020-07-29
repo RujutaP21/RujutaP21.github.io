@@ -43,7 +43,7 @@
           <span class="border"></span>
           <img src="images/brainstorming.svg" class="home-image" alt="rujutapachpande-webdesigner">
         </div>
-        <p class="home-block-item">Namaste,<br>I am Rujuta pachpande originally from India. In the age of digital media, I like interative approach in my design</p>
+        <p class="home-block-item">Namaste,<br>I am Rujuta pachpande originally from India. In the age of digital media, I like interative approach in my design.</p>
       </article>
     </div>
 
@@ -63,7 +63,7 @@
           <span class="border"></span>
           <img src="images/coding.svg" class="home-image" alt="rujutapachpande-engineer">
         </div>
-        <p class="home-block-item">Having background as IT engineering and knowing how backend works helps me making design most effective</p>
+        <p class="home-block-item">Having background as IT engineering and knowing how backend works helps me making design most effective.</p>
       </article>
     </div>
 
@@ -73,7 +73,7 @@
           <span class="border"></span>
           <img src="images/comunication.svg" class="home-image" alt="rujutapachpande-designer">
         </div>
-        <p class="home-block-item">If you have any project and looking for someone to get started, lets collabrate and build some great together</p>
+        <p class="home-block-item">If you have any project and looking for someone to get started, lets collabrate and build some great together.</p>
       </article>
     </div>
 
@@ -117,5 +117,25 @@
 
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/EasePack.min.js"></script>
+
+  <script>
+    // function imageReveal (){
+    gsap.from(".home-image", {opacity: 0.5, scale: 1.5, duration: 5, ease: "bounce",
+    scrollTrigger: {
+        trigger: ".home-image",
+        // start: "top top",
+        // end: "bottom 15%",
+        toggleActions: "play none resume reset"}
+        });
+    // document.getElementsByClassName("home-image")
+        // };
+        
+  </script>
+
 </body>
 </html>

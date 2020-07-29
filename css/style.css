@@ -323,10 +323,10 @@ footer{
   color: #FCFAF1;
 }
 
-.fa:hover:after {
+.fa:hover {
   transform: scale(1);
   opacity: 1;
-  animation: spinAround 9s linear infinite;
+  /* animation: spinAround 9s linear infinite; */
 }
 @keyframes spinAround {
     from {
